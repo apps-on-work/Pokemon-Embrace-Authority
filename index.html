@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoenn Region Starters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="background"></div>
+
+    <div class="header">
+            <h1><font color="Yellow">Pokémon</font><br>Embrace Authority</h1>
+
+            
+            <label class="switch">
+                <span class="sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
+                        </g>
+                    </svg>
+                </span>
+                <span class="moon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
+                    </svg>
+                </span>
+                <input type="checkbox" class="input" onchange="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+    
+    <div class="container">
+        
+        <div class="pokemon-card" id="treecko-card" onclick="showModal('treecko')">
+            <img id="treecko-img" src="252.webp" alt="Treecko Pixel Art" />
+        </div>
+
+        
+        <div class="pokemon-card" id="torchic-card" onclick="showModal('torchic')">
+            <img id="torchic-img" src="255.webp" alt="Torchic Pixel Art" />
+        </div>
+
+        
+        <div class="pokemon-card" id="mudkip-card" onclick="showModal('mudkip')">
+            <img id="mudkip-img" src="258.webp" alt="Mudkip Pixel Art" />
+        </div>
+    </div>
+
+    
+    <div id="treecko-modal" class="modal">
+        <div class="modal-content" id="treecko-modal-content">
+            <span class="close-btn" onclick="closeModal('treecko')">&times;</span>
+            <img src="252.webp" alt="Treecko Pixel Art" />
+            <h3>Treecko</h3>
+            <p>A Grass-type Pokémon, Treecko is known for its agility and its strong tail.</p>
+            <button class="evolve-btn" onclick="evolve('treecko')">Evolve</button>
+        </div>
+    </div>
+
+    
+    <div id="torchic-modal" class="modal">
+        <div class="modal-content" id="torchic-modal-content">
+            <span class="close-btn" onclick="closeModal('torchic')">&times;</span>
+            <img src="255.webp" alt="Torchic Pixel Art" />
+            <h3>Torchic</h3>
+            <p>Torchic is a Fire-type Pokémon, known for its strong will and fiery spirit.</p>
+            <button class="evolve-btn" onclick="evolve('torchic')">Evolve</button>
+        </div>
+    </div>
+
+    
+    <div id="mudkip-modal" class="modal">
+        <div class="modal-content" id="mudkip-modal-content">
+            <span class="close-btn" onclick="closeModal('mudkip')">&times;</span>
+            <img src="258.webp" alt="Mudkip Pixel Art" />
+            <h3>Mudkip</h3>
+            <p>Mudkip is a Water-type Pokémon with strong swimming skills and a friendly personality.</p>
+            <button class="evolve-btn" onclick="evolve('mudkip')">Evolve</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('bgokk.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        
+        .header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0); 
+            font-size: 32px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;  
+        }
+
+        .header.dark-theme {
+            color: rgb(255, 255, 255);
+        }
+
+        
+        .header h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: absolute;
+            bottom: 45px; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .pokemon-card {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+            transform: translateY(10px);
+        }
+
+        .pokemon-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 550px;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal img {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .evolve-btn {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 80%;
+            position: fixed; 
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .evolve-btn:hover {
+            background-color: #ffdf00;
+        }
+
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 25px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .switch {
+        position: absolute;
+        top: 10px;  
+        right: 10px;
+        font-size: 17px;
+        display: inline-block;
+        width: 64px;
+        height: 34px;
+        }
+
+        .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+
+        .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #73C0FC;
+        transition: .4s;
+        border-radius: 30px;
+        }
+
+        .slider:before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        border-radius: 20px;
+        left: 2px;
+        bottom: 2px;
+        z-index: 2;
+        background-color: #ffffff;
+        transition: .4s;
+        }
+
+        .sun svg {
+        position: absolute;
+        top: 6px;
+        left: 36px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+        }
+
+        .moon svg {
+        fill: #73C0FC;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+        }
+
+        .sun svg {
+        animation: rotate 15s linear infinite;
+        }
+
+        @keyframes rotate {
+        
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        .moon svg {
+        animation: tilt 5s linear infinite;
+        }
+
+        @keyframes tilt {
+        
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(-10deg);
+        }
+
+        75% {
+            transform: rotate(10deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+        }
+
+        .input:checked + .slider {
+        background-color: #183153;
+        }
+
+        .input:focus + .slider {
+        box-shadow: 0 0 1px #183153;
+        }
+
+        .input:checked + .slider:before {
+        transform: translateX(30px);
+        }
+
