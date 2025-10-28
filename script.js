@@ -91,19 +91,19 @@
 
         let evolutionStages = {
             treecko: [
-                { name: "Treecko", img: "252.webp", desc: "The Grass-type Pokémon." },
-                { name: "Grovyle", img: "253.webp", desc: "The evolved form of Treecko." },
-                { name: "Sceptile", img: "254.webp", desc: "The final form of Treecko." }
+                { name: "Treecko", img: "252.webp", desc: "A small, green, chameleon-like Grass-type Pokémon with sharp claws. It's agile and often seen hanging from trees." },
+                { name: "Grovyle", img: "253.webp", desc: "The evolved form of Treecko, it’s sleek, fast, and an expert at blending into forests." },
+                { name: "Sceptile", img: "254.webp", desc: "The final evolution of Treecko, a large, agile Grass-type with a leaf blade tail and heightened speed and power." }
             ],
             torchic: [
-                { name: "Torchic", img: "255.webp", desc: "The Fire-type Pokémon." },
-                { name: "Combusken", img: "256.webp", desc: "The evolved form of Torchic." },
-                { name: "Blaziken", img: "257.webp", desc: "The final form of Torchic." }
+                { name: "Torchic", img: "255.webp", desc: "A fiery, chick-like Fire-type Pokémon with a lot of potential for growth." },
+                { name: "Combusken", img: "256.webp", desc: "The evolved form of Torchic, a fiery, bird-like fighter with a mix of Fire and Fighting traits." },
+                { name: "Blaziken", img: "257.webp", desc: "The final evolution of Torchic, a powerful Fire/Fighting-type with incredible kicking abilities and speed." }
             ],
             mudkip: [
-                { name: "Mudkip", img: "258.webp", desc: "The Water-type Pokémon." },
-                { name: "Marshtomp", img: "259.webp", desc: "The evolved form of Mudkip." },
-                { name: "Swampert", img: "260.webp", desc: "The final form of Mudkip." }
+                { name: "Mudkip", img: "258.webp", desc: "A blue, Water-type tadpole Pokémon, known for its cuteness and strong swimming ability." },
+                { name: "Marshtomp", img: "259.webp", desc: "The evolved form of Mudkip, it’s a tough, Water/Ground-type with better mobility on land and in water." },
+                { name: "Swampert", img: "260.webp", desc: "The final evolution of Mudkip, a massive Water/Ground-type with high attack power and great tanking abilities." }
             ]
         };
         
@@ -217,4 +217,5 @@
                 });
             });
         });
+
 
